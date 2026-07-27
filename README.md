@@ -5,10 +5,7 @@ An interactive web-based voice assistant application built with JavaScript, HTML
 ---
 
 ## 📽️ Demo & Video
-
-
-
-
+https://drive.google.com/file/d/1xq15lxaSDfzajfaUWVdFyURhiLzCLhIc/view?usp=drive_link
 
 ---
 
@@ -25,10 +22,4 @@ An interactive web-based voice assistant application built with JavaScript, HTML
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 * **API:** Google Gemini API
 
----
 
-## 🚀 Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Asrar-Alharbi/voice-ai-assistant.git](https://github.com/Asrar-Alharbi/voice-ai-assistant.git)
