@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المساعد الصوتي</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="chat-card">
+    <!-- الهيدر -->
+    <header class="chat-header">
+      <div class="header-info">
+        <h1>المساعد الصوتي</h1>
+        <p>اضغط على الميكروفون وابدأ الحديث</p>
+      </div>
+      <div class="bot-avatar">🤖</div>
+    </header>
+
+    <!-- منطقة الرسائل -->
+    <main class="chat-log" id="chatLog">
+      <div class="message bot">
+        <p>مرحباً! اضغط على زر الميكروفون وتحدّث معي بصوتك 🎤</p>
+      </div>
+    </main>
+
+    <!-- الفوتر مع زر الميكروفون -->
+    <footer class="chat-footer">
+      <button id="micBtn" class="mic-btn">
+        <span id="micIcon">🎤</span>
+      </button>
+      <p id="statusText" class="footer-note">يعمل بشكل أفضل على متصفح Chrome أو Edge</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.chat-card {
+  width: 100%;
+  max-width: 480px;
+  height: 650px;
+  background-color: #1e293b;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+
+/* الهيدر */
+.chat-header {
+  padding: 20px;
+  background-color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.header-info h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.header-info p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.bot-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: #38bdf8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* منطقة المحادثة */
+.chat-log {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #0f172a;
+}
+
+.message {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.message.user {
+  align-self: flex-start;
+  background-color: #14b8a6;
+  color: #ffffff;
+  border-bottom-right-radius: 2px;
+}
+
+.message.bot {
+  align-self: flex-end;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  border-bottom-left-radius: 2px;
+}
+
+/* الفوتر وزر الميكروفون */
+.chat-footer {
+  padding: 20px;
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #334155;
+}
+
+.mic-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #14b8a6;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.4);
+}
+
+.mic-btn:hover {
+  transform: scale(1.05);
+}
+
+.mic-btn.listening {
+  background-color: #ef4444;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.footer-note {
+  font-size: 0.75rem;
+  color: #64748b;
+}
