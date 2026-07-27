@@ -2,6 +2,9 @@
 
 An interactive web-based voice assistant application built with JavaScript, HTML, and CSS that interfaces with the Gemini API for speech recognition and voice response synthesis.
 
+
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/c55d917c-414f-4efe-b226-8319c9587056" />
+
 ---
 
 ## 📽️ Demo & Video
